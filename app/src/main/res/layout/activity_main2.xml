@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.choigyeongyun.alarm.Main2Activity">
 
     <EditText
@@ -27,22 +28,25 @@
         tools:layout_editor_absoluteY="61dp" />
 
     <EditText
-        android:id="@+id/period"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="time"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="414dp" />
-
-    <EditText
         android:id="@+id/textPeriod"
-        android:layout_width="67dp"
-        android:layout_height="40dp"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Period"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="414dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Medicine" />
+
+</LinearLayout>

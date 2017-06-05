@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context="com.example.choigyeongyun.alarm.MainActivity">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="324dp"
+        android:layout_height="42dp"
+        android:text="식사 전"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="325dp"
+        android:layout_height="44dp"
+        android:text="식사 후"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="82dp" />
 
     <Button
         android:id="@+id/button1"
         android:onClick="btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="식사 전 섭취"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="88dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:onClick="but2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="식사 후 섭취"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="192dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:onClick="but3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="주기적인 섭취"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="294dp" />
-
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteY="181dp" />
+</LinearLayout>
