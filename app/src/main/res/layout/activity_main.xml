@@ -13,6 +13,7 @@
         android:layout_width="324dp"
         android:layout_height="42dp"
         android:text="식사 전"
+        android:onClick="switch1"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -21,6 +22,7 @@
         android:layout_width="325dp"
         android:layout_height="44dp"
         android:text="식사 후"
+        android:onClick="switch2"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="82dp" />
 
