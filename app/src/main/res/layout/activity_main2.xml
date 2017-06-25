@@ -7,6 +7,20 @@
     android:orientation="vertical"
     tools:context="com.example.choigyeongyun.alarm.Main2Activity">
 
+    <Button
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="time"
+        android:text="시간 입력" />
+
+    <Button
+        android:id="@+id/period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="period"
+        android:text="주기" />
+
     <EditText
         android:id="@+id/Medicine"
         android:layout_width="304dp"
@@ -20,22 +34,21 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="16dp" />
 
-    <TimePicker
-        android:id="@+id/startTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="61dp" />
-
     <EditText
-        android:id="@+id/textPeriod"
-        android:layout_width="318dp"
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="주기"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="414dp" />
+        android:text="시간 : " />
+
+    <EditText
+        android:id="@+id/txtPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="주기 : " />
 
     <Button
         android:id="@+id/button"
