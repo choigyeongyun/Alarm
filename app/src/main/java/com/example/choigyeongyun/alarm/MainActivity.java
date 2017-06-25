@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     public void switch2(View v){
         AlarmManager am1 = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
         Intent intent1 = new Intent(MainActivity.this, BroadAlarm.class);
-        PendingIntent sender1 = PendingIntent.getBroadcast(MainActivity.this, 1, intent1, PendingIntent.FLAG_NO_CREATE);
+        PendingIntent sender1 = PendingIntent.getBroadcast(MainActivity.this, 1, intent1, 0);
         Calendar calendar1 = Calendar.getInstance();
         calendar1.set(calendar1.get(Calendar.YEAR), calendar1.get(Calendar.MONTH), calendar1.get(Calendar.DATE), 8, 30, 0);
         am1.set(AlarmManager.RTC_WAKEUP, calendar1.getTimeInMillis(), sender1);
